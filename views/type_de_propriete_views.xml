@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="real_estate_ci_type_propriete_tree" model="ir.ui.view">
+        <field name="name">real_estate_ci.type.propriete.tree</field>
+        <field name="model">real_estate_ci.type.propriete</field>
+        <field name="arch" type="xml">
+            <tree string="Types de Propriété">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="real_estate_ci_type_propriete_form" model="ir.ui.view">
+        <field name="name">real_estate_ci.type.propriete.form</field>
+        <field name="model">real_estate_ci.type.propriete</field>
+        <field name="arch" type="xml">
+            <form string="Type de Propriéte">
+                <sheet>
+                    <field name="name"/>
+                    <field name="description"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="real_estate_ci_type_propriete_action" model="ir.actions.act_window">
+        <field name="name">Types de Propriété</field>
+        <field name="res_model">real_estate_ci.type.propriete</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

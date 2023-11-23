@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="real_estate_ci_locataire_tree" model="ir.ui.view">
+        <field name="name">real_estate_ci.locataire.tree</field>
+        <field name="model">real_estate_ci.locataire</field>
+        <field name="arch" type="xml">
+            <tree string="Locataires">
+                <field name="name"/>
+                <field name="prenoms"/>
+                <field name="contact"/>
+                <field name="adresse"/>
+                <field name="ville"/>
+                <field name="pays"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="real_estate_ci_locataire_form" model="ir.ui.view">
+        <field name="name">real_estate_ci.locataire.form</field>
+        <field name="model">real_estate_ci.locataire</field>
+        <field name="arch" type="xml">
+            <form string="Locataire">
+                <sheet>
+                    <field name="name"/>
+                    <field name="prenoms"/>
+                    <field name="contact"/>
+                    <field name="adresse"/>
+                    <field name="ville"/>
+                    <field name="pays"/>  
+                    <field name="location_ids"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="real_estate_ci_locataire_action" model="ir.actions.act_window">
+        <field name="name">Locataires</field>
+        <field name="res_model">real_estate_ci.locataire</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

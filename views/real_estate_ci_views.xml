@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_home" name="Real Estate CI" groups="" web_icon="real_estate_ci,static/description/icon.png" sequence="1"/>
+        <menuitem id="menu_propriete" name="Propriétés" parent="menu_home" action="real_estate_ci_propriete_action" sequence="2"/>
+        <menuitem id="menu_location" name="Locations" parent="menu_home" action="real_estate_ci_location_action" sequence="3"/>
+        <menuitem id="menu_locataire" name="Locataires" parent="menu_home" action="real_estate_ci_locataire_action" sequence="4"/>
+        <menuitem id="menu_proprietaire" name="Propriétaires" parent="menu_home" action="real_estate_ci_proprietaire_action" sequence="5"/>
+        <menuitem id="menu_config" name="Configuration" parent="menu_home" sequence="10000"/>
+        <menuitem id="menu_type_propriete" name="Types de Propriétés" action="real_estate_ci_type_propriete_action" parent="menu_config" sequence="1"/>
+    </data>
+
+
+</odoo>
